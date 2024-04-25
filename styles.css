@@ -1,0 +1,206 @@
+@font-face {
+  font-family: 'Outfit';
+  src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf)
+    format('truetype');
+}
+@font-face {
+  font-family: 'Young Serif';
+  src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf) format('truetype');
+}
+:root {
+  --main-header-color: #312e2c;
+  --main-bg-color: #f3e5d7;
+  --main-text-color: #5f564d;
+  --branndy-red: #854632;
+  --white: #fff;
+  --white-coffe: #e3ddd7;
+  --dark-raspberry: #7a284e;
+  --snow: #fff7fb;
+}
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 16px;
+  font-family: 'Outfit', sans-serif;
+  background: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-weight: 400;
+  line-height: 150%;
+}
+.card {
+  display: flex;
+  max-width: 736px;
+  max-height: max-content;
+  background-color: var(--white);
+  align-items: flex-start;
+  flex-direction: column;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+  align-self: stretch;
+}
+.textcontent {
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  align-self: stretch;
+}
+h1 {
+  font-family: 'Young Serif', sans-serif;
+  color: var(--main-header-color);
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  align-self: stretch;
+}
+h2 {
+  align-self: stretch;
+  color: var(--branndy-red);
+  font-family: 'Young Serif', sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  gap: 24px;
+}
+p {
+  align-self: stretch;
+}
+ul,
+ol {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+
+li {
+  display: flex;
+  padding-left: 8px;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+}
+span {
+  align-self: baseline;
+  font-weight: 700;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 24px;
+}
+.preparation {
+  padding: 24px;
+  gap: 16px;
+  background: var(--Snow, #fff7fb);
+  border-radius: 12px;
+}
+.preparation-heading {
+  font-family: 'Outfit';
+  color: var(--Dark-Raspberry, #7a284e);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 100%;
+  font-style: normal;
+}
+.dot {
+  display: flex;
+  width: 16px;
+  align-items: center;
+}
+.text-list {
+  flex: 1 0 0;
+}
+.separator {
+  width: 100%;
+  height: 1px;
+  background: var(--white-coffe);
+}
+.number {
+  align-items: flex-start;
+  color: var(--branndy-red);
+  font-weight: 700;
+  align-self: baseline;
+}
+.table {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.row {
+  display: flex;
+  padding: 0px 32px;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+}
+.row div {
+  flex: 1 0 0;
+}
+.row :nth-child(2) {
+  color: var(--branndy-red);
+  font-weight: 700;
+}
+.attribution {
+  padding: 20px;
+  align-self: center;
+}
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    padding: 123px 352px 124px 352px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    width: 736px;
+    gap: 40px;
+    padding: 40px;
+    border-radius: 24px;
+  }
+  .hero img {
+    height: 300px;
+    border-radius: 12px;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  .textcontent {
+    padding: 0;
+  }
+  .preparation {
+    padding: 28px;
+  }
+}
